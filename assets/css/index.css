@@ -1,0 +1,210 @@
+/* Base styles */
+.full-stack-web-development {
+    width: 100%;
+    min-height: 90vh;
+    padding: 4rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.underline {
+    width: 100px;
+    height: 0.25rem;
+    background: #ffc107;
+    margin: 1rem auto 2rem;
+    transition: width 0.3s ease;
+}
+
+section:hover .underline {
+    width: 200px;
+}
+
+/* Services Section */
+.our-services {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.service {
+    height: 100%;
+    padding: 2rem;
+    background: #0F0C1D;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.service h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Pricing Section */
+.pricing-strategy {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.pricing {
+    height: 100%;
+    background: #0F0C1D;
+    color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pricing:hover {
+    transform: translateY(-10px);
+}
+
+.pricing h4 {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin: 1.5rem 0;
+}
+
+/* Contact Section */
+.contact-us {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.contact-us form .form-control {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.contact-us ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-us ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .full-stack-web-development {
+        text-align: center;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    .service, .pricing {
+        max-width: 350px;
+        margin: 0 auto 2rem;
+    }
+
+    .underline {
+        width: 150px;
+    }
+
+    section:hover .underline {
+        width: 150px;
+    }
+
+    .row {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .service h3, .pricing h3 {
+        font-size: 1.3rem;
+    }
+
+    .service p, .pricing p {
+        font-size: 0.9rem;
+    }
+
+    .pricing h4 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        padding: 0 1rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.service, .pricing {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Button Styling */
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-warning {
+    background: #ffc107;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+
