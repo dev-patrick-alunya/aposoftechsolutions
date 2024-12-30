@@ -39,6 +39,9 @@ img {
     overflow: hidden;
 }
 
+.container h2 {
+    text-align: center;
+}
 .services {
     padding: 4rem 2rem;
 }

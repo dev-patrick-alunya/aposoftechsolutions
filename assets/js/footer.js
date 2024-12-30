@@ -1,0 +1,1 @@
+document.getElementById('getFullYear').innerHTML = new Date().getFullYear(); // 2024
