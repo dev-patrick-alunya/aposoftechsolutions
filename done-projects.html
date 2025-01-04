@@ -46,11 +46,16 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/navBar.css"/>
+    <link rel="stylesheet" href="./assets/css/animations.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"/>
     <link rel="stylesheet" href="./assets/css/footer.css"/>
+    <link rel="stylesheet" href="./assets/css/loader.css"/>
 </head>
 <body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
@@ -206,7 +211,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3>About Us</h3>
+                    <span>
+                        <img src="./assets/images/aposoftech-company-logo/APOSOFTECH COMPANY LOGO V2.png" alt="APOSOFTECH Solutions Brand Logo" class="img-fluid"/>
+                    </span>
                     <p>APOSOFTECH SOLUTIONS is a Dedicated SOFTWARE DEVELOPMENT COMPANY that provides SOFTWARE DEVELOPMENT | Web Application Development | Corporate Website design and Development services, Graphic Design Services services to clients all over Nairobi, Machakos, Kakamega, Nakuru, Mombasa, Kenya and whole of the world.</p>
                 </div>
                 <div class="col-md-6">
@@ -223,11 +230,23 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-center">APOSOFTECH SOLUTIONS &copy; 2020</p>
+                <p class="text-center">APOSOFTECH SOLUTIONS &copy; <span id="getFullYear"></span> | Maintained by <span><a href="https://patrick-alunya-online-portfolio.netlify.app/">Patrick Alunya</a></span></p>
             </div>
         </div>
     </footer>
     <!-- End Of Footer -->
+
+    <!-- CDN JS Files -->
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Custom JS -->
+   <script src="./assets/js/navBar.js"></script>
+   <script src="./assets/js/footer.js"></script>
+   <script src="./assets/js/contact-form.js"></script>
+   <script src="./assets/js/loader.js"></script>
 
 </body>
 </html>

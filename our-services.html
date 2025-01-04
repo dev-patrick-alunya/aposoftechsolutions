@@ -49,12 +49,17 @@
 
     <!--    Custom CSS -->
     <link rel="stylesheet" href="./assets/css/navBar.css"/>
+    <link rel="stylesheet" href="./assets/css/animations.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"/>
     <link rel="stylesheet" href="./assets/css/footer.css"/>
 
+    <link rel="stylesheet" href="./assets/css/loader.css"/>
 </head>
 <body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
             <span>
@@ -74,8 +79,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="our-services.html">Our Services</a>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="our-services.html#web-development">Web Development</a>
+                        <a class="dropdown-item" href="our-services.html#web-design">Web Design</a>
+                        <a class="dropdown-item" href="our-services.html#graphic-design">Graphic Design</a>
+                        <a class="dropdown-item" href="our-services.html#seo">SEO</a>
+                        <a class="dropdown-item" href="our-services.html#software-development">Software Development</a>
+                        <a class="dropdown-item" href="our-services.html#mobile-app-development">Mobile App Development</a>
+                    </div>
+                </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="done-projects.html">Done Projects</a>
@@ -86,12 +102,13 @@
             </ul>
         </div>
     </nav>
-    <!-- End of NavBar -->
+    <!-- End Of Navbar -->
 
     <section class="services" id="services">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center">Our Services</h1>
+                <div class="underline"></div>
             </div>
         </div>
         <div class="row">
@@ -148,12 +165,105 @@
     </section>
     <!-- End of Services Section -->
 
+    <!-- Contact Us -->
+    <section class="contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Get In Touch</h3>
+                    <p>Have a project in mind? Let's discuss your requirements and see how we can help you.</p>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required/>
+                        </div>
+                        <div class="form-group
+                        ">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group
+                        ">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required/>
+                        </div>
+                        <div class="form-group
+                        ">
+                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to contact us for any queries or information.</p>
+                    <ul>
+                        <li>
+                            <span><img src="./assets/images/icons/social-media-icons/wa icon.png"/></span>
+                            <span>
+                                <a href="https://wa.me/+254115348341">+254 115 348 341</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./assets/images/icons/social-media-icons/phone icon.png"/></span>
+                            <span>
+                                <a href="tel:+254115348341">+254 115 348 341</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./assets/images/icons/social-media-icons/gmail icon.png"/></span>
+                            <span>
+                                <a href="mailto:aposoftechsolutions@gmail.com">aposoftechsolutions@gmail.com</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./assets/images/icons/social-media-icons/aposoftech location address icon.png"/></span>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/APOSOFTECH-SOLUTIONS-100101001805073" target="_blank">
+                                <img src="./assets/images/icons/social-media-icons/fb icon.png" alt="Facebook Icon"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/AposoftechS" target="_blank">
+                                <img src="./assets/images/icons/social-media-icons/x icon.png" alt="Twitter Icon"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/aposoftechsolutions/" target="_blank">
+                                <img src="./assets/images/icons/social-media-icons/ig icon.png" alt="Instagram Icon"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/aposoftech-solutions" target="_blank">
+                                <img src="./assets/images/icons/social-media-icons/linkedin icon.png" alt="LinkedIn Icon"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC - 5J9Z9Z9Z" target="_blank">
+                                <img src="./assets/images/icons/social-media-icons/youtube icon.png" alt="YouTube Icon"/>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Contact Us -->
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3>About Us</h3>
+                    <span>
+                        <img src="./assets/images/aposoftech-company-logo/APOSOFTECH COMPANY LOGO V2.png" alt="APOSOFTECH Solutions Brand Logo" class="img-fluid"/>
+                    </span>
                     <p>APOSOFTECH SOLUTIONS is a Dedicated SOFTWARE DEVELOPMENT COMPANY that provides SOFTWARE DEVELOPMENT | Web Application Development | Corporate Website design and Development services, Graphic Design Services services to clients all over Nairobi, Machakos, Kakamega, Nakuru, Mombasa, Kenya and whole of the world.</p>
                 </div>
                 <div class="col-md-6">
@@ -168,11 +278,25 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
-            <p class="text-center">APOSOFTECH SOLUTIONS &copy; 2020</p>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">APOSOFTECH SOLUTIONS &copy; <span id="getFullYear"></span> | Maintained by <span><a href="https://patrick-alunya-online-portfolio.netlify.app/">Patrick Alunya</a></span></p>
+            </div>
         </div>
     </footer>
     <!-- End Of Footer -->
+
+    <!-- CDN JS Files -->
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Custom JS -->
+   <script src="./assets/js/navBar.js"></script>
+   <script src="./assets/js/footer.js"></script>
+   <script src="./assets/js/contact-form.js"></script>
+   <script src="./assets/js/loader.js"></script>
 
 </body>
 </html>

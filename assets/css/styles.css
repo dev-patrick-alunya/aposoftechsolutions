@@ -70,11 +70,12 @@ img {
     border: none;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card-img-top {
@@ -97,5 +98,11 @@ img {
 .card-text {
     color: #666;
     line-height: 1.6;
+}
+
+@import url('animations.css');
+
+.nav-link {
+    transition: color 0.3s ease;
 }
 

@@ -24,12 +24,10 @@
     <meta http-equiv="msapplication-tooltip" content="APOSOFTECH SOLUTIONS">
     <meta http-equiv="msapplication-starturl" content="index.html"> 
     <meta http-equiv="msapplication-window" content="width=800;height=600">
-    <meta http-equiv="msapplication-task" content="name=Home;action-uri=index.html;icon-uri=about.ico">
-    <meta http-equiv="msapplication-task" content="name=explore-more;action-uri=explore-more.html;icon-uri=explore-more.ico">
     <meta http-equiv="msapplication-task" content="name=About;action-uri=about-us.html;icon-uri=about.ico">
-    <meta http-equiv="msapplication-task" content="name=Services;action-uri=web-development.html;icon-uri=services.ico">
-    <meta http-equiv="msapplication-task" content="name=Services;action-uri=seo.html;icon-uri=services.ico">
+    <meta http-equiv="msapplication-task" content="name=Services;action-uri=index.html;icon-uri=services.ico">
     <meta http-equiv="msapplication-task" content="name=Contact;action-uri=contact-us.html;icon-uri=contact.ico">
+    <meta http-equiv="msapplication-task" content="name=get-quote;action-uri=get-quote.html;icon-uri=get-quote.ico">
     <meta http-equiv="msapplication-task" content="name=Products;action-uri=done-projects.html;icon-uri=products.ico">
     <meta http-equiv="msapplication-task" content="name=Support;action-uri=terms-of-services.html;icon-uri=support.ico">
     <meta http-equiv="msapplication-task" content="name=Feedback;action-uri=our-services.html;icon-uri=feedback.ico">
@@ -42,25 +40,27 @@
     <meta name="distribution" content="global">
     <meta name="language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APOSOFTECH SOLUTIONS | About Us Page</title>
+    <title>APOSOFTECH SOLUTIONS | Our Services Page</title>
 
+    <!--    CDN CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- CDN CSS Files -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Custom CSS -->
+    <!--    Custom CSS -->
     <link rel="stylesheet" href="./assets/css/navBar.css"/>
     <link rel="stylesheet" href="./assets/css/animations.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css"/>
     <link rel="stylesheet" href="./assets/css/index.css"/>
     <link rel="stylesheet" href="./assets/css/footer.css"/>
+
     <link rel="stylesheet" href="./assets/css/loader.css"/>
 </head>
 <body>
     <div class="loader-container">
         <div class="loader"></div>
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
             <span>
@@ -103,73 +103,12 @@
             </ul>
         </div>
     </nav>
-    <!-- End OF Nav Bar -->
+    <!-- End Of Navbar -->
 
-    <!-- About Us -->
-    <section class="about-us">
+    <!-- Get Quote -->
+    <section class="get-quote">
         <div class="container">
-            <h2>About Us</h2>
-            <div class="underline"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Who We Are</h3>
-                    <p>APOSOFTECH SOLUTIONS is a Dedicated SOFTWARE DEVELOPMENT COMPANY that provides SOFTWARE DEVELOPMENT | Web Application Development | Corporate Website design and Development services, Graphic Design Services services to clients all over Nairobi, Machakos, Kakamega, Nakuru, Mombasa, Kenya and whole of the world.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Our Mission</h3>
-                    <p>Our mission is to provide our clients with high-quality services that help them achieve their goals. We are committed to delivering exceptional results and building long-term relationships with our clients.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Our Vision</h3>
-                    <p>Our vision is to be the leading software development company in Kenya and the world. We are dedicated to providing our clients with innovative solutions that help them succeed in the digital world.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Our Values</h3>
-                    <p>At APOSOFTECH, we believe in honesty, integrity, and transparency. We are committed to providing our clients with the best possible service and building long-term relationships based on trust and respect.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Of About Us -->
-
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
-        <div class="container">
-            <h2>Why Choose Us</h2>
-            <div class="underline"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Quality Services</h3>
-                    <p>At APOSOFTECH, we are committed to providing our clients with high-quality services that 
-                        meet their specific needs. We take the time to understand your business and develop 
-                        custom solutions that help you achieve your goals.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Experienced Team</h3>
-                    <p>Our team of experienced professionals has the skills and expertise to deliver exceptional 
-                        results. We have worked with clients from a wide range of industries and are dedicated to 
-                        helping you succeed.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Customer Support</h3>
-                    <p>At APOSOFTECH, we believe in providing our clients with the best possible customer support. 
-                        We are always available to answer your questions and provide you with the assistance you need.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Affordable Pricing</h3>
-                    <p>Our services are competitively priced to ensure that you get the best value for your money. 
-                        We offer a range of packages to suit your budget and can work with you to develop a custom 
-                        solution that meets your needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Of Why Choose Us -->
-
-    <!-- Contact Us -->
-    <section class="contact-us">
-        <div class="container">
-            <h2>Contact Us</h2>
+            <h2>Get A Quote</h2>
             <div class="underline"></div>
             <div class="row">
                 <div class="col-md-6">
@@ -177,7 +116,8 @@
                     <p>Have a project in mind? Let's discuss your requirements and see how we can help you.</p>
                     <p>Fill out the form below and we'll get back to you as soon as possible.</p>
                     <form action="" method="POST">
-                        <div class="form-group">
+                        <div class="form-group
+                        ">
                             <input type="text" name="name" class="form-control" placeholder="Your Name" required/>
                         </div>
                         <div class="form-group
@@ -194,7 +134,7 @@
                         </div>
                         <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
                     </form>
-                </div>
+                </div> 
                 <div class="col-md-6">
                     <h3>Contact Information</h3>
                     <p>Feel free to contact us for any queries or information.</p>
@@ -214,7 +154,7 @@
                         <li>
                             <span><img src="./assets/images/icons/social-media-icons/gmail icon.png"/></span>
                             <span>
-                                <a href="mailto:aposoftechsolutions@gmail.com">aposoftechsolutions@gmail.com</a>
+                                <a href="mailto: aposoftechsolutions@gmail.com">aposoftechsolutions@gmail.com</a>
                             </span>
                         </li>
                         <li>
@@ -223,39 +163,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-12">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/APOSOFTECH-SOLUTIONS-100101001805073" target="_blank">
-                                <img src="./assets/images/icons/social-media-icons/fb icon.png" alt="Facebook Icon"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/AposoftechS" target="_blank">
-                                <img src="./assets/images/icons/social-media-icons/x icon.png" alt="Twitter Icon"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/aposoftechsolutions/" target="_blank">
-                                <img src="./assets/images/icons/social-media-icons/ig icon.png" alt="Instagram Icon"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/aposoftech-solutions" target="_blank">
-                                <img src="./assets/images/icons/social-media-icons/linkedin icon.png" alt="LinkedIn Icon"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UC - 5J9Z9Z9Z" target="_blank">
-                                <img src="./assets/images/icons/social-media-icons/youtube icon.png" alt="YouTube Icon"/>
-                            </a>
-                        </li>
-                    </ul>
             </div>
         </div>
     </section>
-    <!-- End Of Contact Us -->
+    <!-- End Of Get Quote -->
 
     <!-- Footer -->
     <footer>
@@ -270,21 +181,11 @@
                 <div class="col-md-6">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html">About Us</a>
-                        </li>
-                        <li>
-                            <a href="our-services.html">Our Services</a>
-                        </li>
-                        <li>
-                            <a href="done-projects.html">Done Projects</a>
-                        </li>
-                        <li>
-                            <a href="terms-of-services.html">Terms Of Services</a>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-services.html">Our Services</a></li>
+                        <li><a href="done-projects.html">Done Projects</a></li>
+                        <li><a href="terms-of-services.html">Terms Of Services</a></li>
                     </ul>
                 </div>
             </div>
@@ -298,15 +199,16 @@
     <!-- End Of Footer -->
 
     <!-- CDN JS Files -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="./assets/js/navBar.js"></script>
-    <script src="./assets/js/footer.js"></script>
-    <script src="./assets/js/contact-form.js"></script>
-    <script src="./assets/js/loader.js"></script>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <!-- Custom JS -->
+   <script src="./assets/js/navBar.js"></script>
+   <script src="./assets/js/footer.js"></script>
+   <script src="./assets/js/contact-form.js"></script>
+   <script src="./assets/js/loader.js"></script>
+
 </body>
 </html>

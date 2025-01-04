@@ -1,0 +1,98 @@
+/* Button animations */
+.btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Link animations */
+a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+a:not(.btn):after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+a:not(.btn):hover:after {
+    width: 100%;
+}
+
+/* Social media icons animation */
+.social-media a img {
+    transition: transform 0.8s ease-in-out;
+}
+
+.social-media a:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Dropdown menu animation */
+.dropdown-menu {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Apply bounce animation to images */
+img {
+    animation: bounce 2s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+/* Scale up on hover */
+img:hover {
+    transform: scale(1.1);
+    animation: none; /* Stop bouncing when hovering */
+    transition: 5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Exclude certain images from animation if needed */
+.loader img,
+.navbar-brand img,
+.social-media a img {
+    animation: none;
+}
+.loader img:hover,
+.navbar-brand img:hover,
+.social-media img:hover {
+    transform: none;
+}
