@@ -66,6 +66,7 @@ img {
 }
 
 .card {
+    margin-top: 2rem;
     margin-bottom: 2rem;
     border: none;
     border-radius: 15px;
@@ -104,5 +105,106 @@ img {
 
 .nav-link {
     transition: color 0.3s ease;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.social-media-icons li {
+    list-style: none;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-whatsapp img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.floating-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media Handles */
+.social-media-handles {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-media-handles a img {
+    /* width: 40px;
+    height: 40px; */
+    transition: transform 0.3s ease;
+}
+
+.social-media-handles a img:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.5);
+}
+
+.hero-banner {
+    width: 100%;
+    max-width: 100%;
+    background: darkblue;
+    color: white;
+}
+
+.hero-banner .col-md-12 {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 1rem;
+}
+
+.hero-banner h1 {
+    text-align: center;
 }
 

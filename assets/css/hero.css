@@ -44,3 +44,9 @@
     border-radius: 5px;
     background: #346FDD;
 }
+
+@media (max-width: 2560px) {
+    .hero {
+        max-width: 2560px;
+    }
+}

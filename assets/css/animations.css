@@ -74,7 +74,7 @@ a:not(.btn):hover:after {
 img {
     animation: bounce 2s ease-in-out infinite;
     transition: transform 0.3s ease-in-out;
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 /* Scale up on hover */
@@ -88,11 +88,32 @@ img:hover {
 /* Exclude certain images from animation if needed */
 .loader img,
 .navbar-brand img,
-.social-media a img {
+.social-media-handles img,
+.whatsapp-button img,
+.aposoftech-company-logo img {
     animation: none;
 }
 .loader img:hover,
 .navbar-brand img:hover,
 .social-media img:hover {
     transform: none;
+}
+
+@keyframes scaleUp {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.whatsapp-button img {
+    transition: background-color 0.3s ease-in-out, transform 1s ease-in-out;
+    animation: scaleUp 1s infinite ease-in-out;
+}
+
+.whatsapp-button img:hover {
+    /* background-color: #25D366; WhatsApp green color */
+    animation: none; /* Stop scaling when hovering */
 }
