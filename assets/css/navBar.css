@@ -88,3 +88,8 @@ nav.navbar {
     background: #e0a800;
     color: #0F0C1D;
 }
+
+.brand-logo img {
+    width: 100px;
+    height: auto;
+}
