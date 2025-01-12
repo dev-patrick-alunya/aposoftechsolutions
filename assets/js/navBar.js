@@ -10,3 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdownMenu.style.display = 'none';
     });
 });
+
+// Formatted Date
+const currentDate = new Date();
+const formattedDate = `${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}`;
+const date = document.getElementById('date');
+date.innerHTML = formattedDate;
+date.style.color = 'white';
