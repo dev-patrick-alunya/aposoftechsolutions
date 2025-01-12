@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.querySelector('.services-dropdown');
     const dropdownMenu = document.querySelector('.services-dropdown-menu');
+    const navbar = document.querySelector('nav.navbar');
 
     dropdown.addEventListener('mouseover', function() {
         dropdownMenu.style.display = 'block';
@@ -8,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     dropdown.addEventListener('mouseout', function() {
         dropdownMenu.style.display = 'none';
+    });
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     });
 });
 

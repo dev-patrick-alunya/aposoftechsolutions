@@ -3,6 +3,7 @@
     height: 50vh;
     width: 100%;
     max-width: 1440px;
+    margin-top: 70px; /* Adjust this value if needed to match the navbar height */
 }
 
 .carousel-inner .carousel-item {
