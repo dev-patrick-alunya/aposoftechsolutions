@@ -3,7 +3,7 @@
     height: 50vh;
     width: 100%;
     max-width: 1440px;
-    margin-top: 70px; /* Adjust this value if needed to match the navbar height */
+    margin-top: 100px; /* Adjust this value if needed to match the navbar height */
 }
 
 .carousel-inner .carousel-item {
@@ -15,7 +15,7 @@
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;

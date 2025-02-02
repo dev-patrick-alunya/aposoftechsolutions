@@ -195,6 +195,7 @@ img {
     max-width: 100%;
     background: darkblue;
     color: white;
+    padding: 5rem 2rem;
 }
 
 .hero-banner .col-md-12 {
