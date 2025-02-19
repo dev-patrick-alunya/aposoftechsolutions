@@ -1,0 +1,28 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Remove .php extension from URLs
+# Example: example.com/about.php -> example.com/about
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Remove .html extension from URLs
+# Example: example.com/about.html -> example.com/about
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Optional: Redirect URLs with .php or .html extensions to extensionless URLs
+# Example: example.com/about.php -> example.com/about
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.php [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.php
+
+# Prevent directory listing
+Options -Indexes

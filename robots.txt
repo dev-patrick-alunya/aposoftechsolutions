@@ -1,0 +1,50 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary or sensitive directories
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /private/
+
+# Block search result pages or internal search
+Disallow: /search/
+Disallow: /?s=
+
+# Block duplicate content or filtered pages
+Disallow: /tag/
+Disallow: /category/
+Disallow: /author/
+
+# Block low-value pages
+Disallow: /thank-you/
+Disallow: /privacy-policy/
+Disallow: /terms-of-service/
+
+# Block specific file types (if needed)
+Disallow: /*.pdf$
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /*.gif$
+
+# Allow Googlebot to crawl and index important assets
+Allow: /our-services/
+Allow: /about-us/
+Allow: /contact-us/
+Allow: /web-design/
+Allow: /web-development/
+Allow: /seo/
+Allow: /graphic-design/
+Allow: /index/
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/fonts/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /wp-content/uploads/
+
+# Sitemap location
+Sitemap: https://aposoftechsolutions.co.ke/sitemap.xml
