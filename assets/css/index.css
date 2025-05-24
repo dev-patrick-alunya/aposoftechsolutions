@@ -199,11 +199,13 @@ section:hover .underline {
 
 .btn-warning {
     background: #ffc107;
+    color: black;
     border: none;
 }
 
 .btn-warning:hover {
     background: #e0a800;
+    color: black;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
